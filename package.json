@@ -1,0 +1,38 @@
+{
+  "name": "be-portfolio",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "scripts": {
+    "compile": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --extensions '.ts,.js' --out-dir dist",
+    "start": "concurrently \"npm run compile\" \"nodemon ./dist/index.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "commonjs",
+  "dependencies": {
+    "@apollo/server": "^4.11.2",
+    "@babel/node": "^7.26.0",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "graphql": "^16.9.0",
+    "mongoose": "^8.8.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-typescript": "^7.26.0",
+    "@types/node": "^22.9.0",
+    "babel-plugin-module-resolver": "^5.0.2",
+    "concurrently": "^9.1.0",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.10",
+    "typescript": "^5.6.3"
+  }
+}
